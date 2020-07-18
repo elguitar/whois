@@ -442,7 +442,7 @@ class WhoisRo(WhoisEntry):
     """
     regex = {
         'domain_name':      'Domain Name: *(.+)',
-        'domain_status':    'Domain Status: *(.+)',
+        'status':           'Domain Status: *(.+)',
         'registrar':        'Registrar: *(.+)',
 
         'referral_url':     'Referral URL: *(.+)',  # http url of whois_server: empty usually
@@ -649,7 +649,7 @@ class WhoisCa(WhoisEntry):
         'registrant_name':                'Registrant Name: *(.+)',
         'registrant_number':              'Registry Registrant ID: *(.+)',
         'admin_name':                     'Admin Name: *(.+)',
-        'domain_status':                  'Domain status: *(.+)',
+        'status':                         'Domain status: *(.+)',
         'emails':                         'Email: *(.+)',
         'updated_date':                   'Updated Date: *(.+)',
         'creation_date':                  'Creation Date: *(.+)',
